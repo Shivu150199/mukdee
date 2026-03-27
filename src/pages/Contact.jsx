@@ -22,7 +22,7 @@ export default function Contact() {
         setIsSending(true);
 
         const GOOGLE_SCRIPT_URL =
-            "https://script.google.com/macros/s/AKfycbytif-DvdDsVBbXJPXff430Uh9P1IssKqo9gcdIIiRWmJbp2B89Y1RsjqqgJA6WkmhO/exec";
+            "https://script.google.com/macros/s/AKfycbyaY1qb4WXAdRZLWRgvzkQXpumElXAAzTlJy8blCVWmZcTv0RfLnMwXqYxZk91DxKgQ/exec";
 
         try {
             await fetch(GOOGLE_SCRIPT_URL, {
