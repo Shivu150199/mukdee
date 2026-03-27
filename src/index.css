@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --color-mukdee-blue: #005696;
+  --color-mukdee-orange: #F15A29;
+  --color-mukdee-lightBlue: #f0f7ff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply antialiased text-slate-800 bg-white;
+}
