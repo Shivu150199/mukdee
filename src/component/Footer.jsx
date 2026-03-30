@@ -8,12 +8,17 @@ export default function Footer() {
             <div className="container mx-auto px-6 grid md:grid-cols-4 gap-12 border-b border-gray-800 pb-12">
                 <div className="col-span-1 md:col-span-1">
                     <div className="text-3xl font-black flex italic mb-4">
-                        <img src={logo} alt="" className="w-10" />
+                        <img src={logo} alt="" className="w-24" />
                     </div>
-                    <p className="text-sm leading-relaxed">
+                    <p className="text-sm leading-relaxed mb-4">
                         Reliable procurement, supply, and marketplace-driven
                         business solutions across India.
                     </p>
+                    {/* REGISTRATION DETAILS IN FOOTER */}
+                    <div className="text-[10px] space-y-1 font-mono opacity-60">
+                        <p>CIN: U46909DL2026PTC461897</p>
+                        <p>GSTIN: 07AAUCM4038R1ZJ</p>
+                    </div>
                 </div>
 
                 <div>
@@ -60,7 +65,7 @@ export default function Footer() {
                     <h4 className="text-white font-bold mb-6 uppercase tracking-widest text-sm">
                         Business Focus
                     </h4>
-                    <ul className="space-y-3 text-sm">
+                    <ul className="space-y-3 text-sm text-gray-400">
                         <li>Government GeM Tenders</li>
                         <li>Institutional Supply</li>
                         <li>Bulk Trading Support</li>
@@ -70,26 +75,30 @@ export default function Footer() {
 
                 <div>
                     <h4 className="text-white font-bold mb-6 uppercase tracking-widest text-sm">
-                        Contact Us
+                        Contact Support
                     </h4>
                     <div className="space-y-4 text-sm">
                         <div className="flex gap-3">
                             <Mail size={16} className="text-mukdee-orange" />{" "}
-                            mukdeetradingprivatelimited@gmail.com
+                            mukdeetrading@gmail.com
                         </div>
                         <div className="flex gap-3">
                             <Phone size={16} className="text-mukdee-orange" />{" "}
                             +91 9871624185
                         </div>
-                        <div className="flex gap-3 text-xs">
+                        <div className="flex gap-3">
+                            <Phone size={16} className="text-mukdee-orange" />{" "}
+                            +91 8285441138
+                        </div>
+                        <div className="flex gap-3 text-xs leading-tight">
                             <MapPin size={24} className="text-mukdee-orange" />{" "}
-                            G-34, Kh No. 55/20/2, 2nd floor, Jai Vihar, Baprola,
-                            New Delhi, 110043
+                            G-34, Kh No. 55/20/2, Jai Vihar, Baprola, New Delhi
+                            - 110043
                         </div>
                     </div>
                 </div>
             </div>
-            <p className="text-center pt-8 text-xs text-gray-500">
+            <p className="text-center pt-8 text-[10px] text-gray-500 uppercase tracking-widest">
                 © 2026 Mukdee Trading Private Limited. All Rights Reserved.
             </p>
         </footer>

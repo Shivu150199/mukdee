@@ -100,7 +100,7 @@ export default function Contact() {
                                         Email Address
                                     </h3>
                                     <p className="text-gray-600 text-sm break-all font-medium">
-                                        mukdeetradingprivatelimited@gmail.com
+                                       mukdeetrading@gmail.com
                                     </p>
                                 </div>
 
@@ -131,7 +131,15 @@ export default function Contact() {
                                         Vihar, Baprola, New Delhi - 110043
                                     </p>
                                 </div>
-
+                                <div className="pt-6 border-t border-white/10">
+                                    <p className="text-mukdee-orange font-bold uppercase text-[10px] tracking-[0.2em] mb-3">
+                                        Registration Details
+                                    </p>
+                                    <div className="space-y-1 font-mono text-[11px] opacity-80">
+                                        <p>CIN: U46909DL2026PTC461897</p>
+                                        <p>GST: 07AAUCM4038R1ZJ</p>
+                                    </div>
+                                </div>
                                 {/* QUICK WHATSAPP LINK */}
                                 <a
                                     href="https://wa.me/919871624185"

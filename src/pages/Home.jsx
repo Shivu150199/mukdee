@@ -60,7 +60,7 @@ export default function Home() {
         e.preventDefault();
         setIsSending(true);
         const GOOGLE_SCRIPT_URL =
-            "https://script.google.com/macros/s/AKfycbyaY1qb4WXAdRZLWRgvzkQXpumElXAAzTlJy8blCVWmZcTv0RfLnMwXqYxZk91DxKgQ/exec";
+            "https://script.google.com/macros/s/AKfycbytif-DvdDsVBbXJPXff430Uh9P1IssKqo9gcdIIiRWmJbp2B89Y1RsjqqgJA6WkmhO/exec";
         try {
             await fetch(GOOGLE_SCRIPT_URL, {
                 method: "POST",
@@ -82,6 +82,35 @@ export default function Home() {
             setIsSending(false);
         }
     };
+
+  /// --- NEW EXPERTISE DATA (FIXED 3RD IMAGE) ---
+    const expertiseItems =[
+        { 
+            title: "Technical Specification Matching", 
+            // Professional analyzing technical data/documents
+            img: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=800&auto=format&fit=crop" 
+        },
+        { 
+            title: "Bulk Order Processing & Logistics", 
+            // Forklift moving bulk pallets
+            img: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?q=80&w=800&auto=format&fit=crop" 
+        },
+        { 
+            title: "OEM Authorization & Certification", 
+            // FIXED: Professional corporate handshake across a desk
+            img: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=800&auto=format&fit=crop" 
+        },
+        { 
+            title: "Inventory Management & Fast Dispatch", 
+            // Worker organizing and dispatching inventory
+            img: "https://images.unsplash.com/photo-1604014237800-1c9102c219da?q=80&w=800&auto=format&fit=crop" 
+        },
+        { 
+            title: "Quality Assurance & Product Traceability", 
+            // Close up of a professional inspecting a product
+            img: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=800&auto=format&fit=crop" 
+        }
+    ];
 
     return (
         <div className="overflow-hidden bg-white text-gray-800">
@@ -272,7 +301,65 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* --- INDUSTRIES --- */}
+            {/* --- NEW: INDUSTRY SUPPLY EXPERTISE SECTION --- */}
+            <section className="py-20 bg-gradient-to-b from-white to-blue-50">
+                <div className="container mx-auto px-6">
+                    <SectionHeader
+                        title="Industry Supply Expertise"
+                        subtitle="Precision, compliance, and efficiency across the entire supply chain."
+                    />
+
+                    {/* Top Row: 3 Items */}
+                    <div className="flex flex-col md:flex-row justify-center gap-6 mb-6">
+                        {expertiseItems.slice(0, 3).map((item, i) => (
+                            <motion.div
+                                key={i}
+                                whileHover={{ y: -8 }}
+                                className="w-full md:w-[30%] bg-white rounded-2xl overflow-hidden shadow-lg shadow-blue-900/5 border border-blue-100/50 flex flex-col group"
+                            >
+                                <div className="overflow-hidden h-48">
+                                    <img
+                                        src={item.img}
+                                        alt={item.title}
+                                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                                    />
+                                </div>
+                                <div className="p-6 flex-grow flex items-center justify-center text-center bg-white z-10">
+                                    <h4 className="text-mukdee-blue font-semibold text-[15px] leading-snug">
+                                        {item.title}
+                                    </h4>
+                                </div>
+                            </motion.div>
+                        ))}
+                    </div>
+
+                    {/* Bottom Row: 2 Items */}
+                    <div className="flex flex-col md:flex-row justify-center gap-6">
+                        {expertiseItems.slice(3, 5).map((item, i) => (
+                            <motion.div
+                                key={i}
+                                whileHover={{ y: -8 }}
+                                className="w-full md:w-[38%] bg-white rounded-2xl overflow-hidden shadow-lg shadow-blue-900/5 border border-blue-100/50 flex flex-col group"
+                            >
+                                <div className="overflow-hidden h-48 md:h-56">
+                                    <img
+                                        src={item.img}
+                                        alt={item.title}
+                                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                                    />
+                                </div>
+                                <div className="p-6 flex-grow flex items-center justify-center text-center bg-white z-10">
+                                    <h4 className="text-mukdee-blue font-semibold text-[15px] leading-snug">
+                                        {item.title}
+                                    </h4>
+                                </div>
+                            </motion.div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* --- INDUSTRIES (CATEGORIES) --- */}
             <section className="py-20 bg-mukdee-blue text-white">
                 <div className="container mx-auto px-6">
                     <SectionHeader
@@ -310,7 +397,7 @@ export default function Home() {
 
                     <div className="max-w-6xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden flex flex-col lg:flex-row border border-gray-100">
                         {/* Info Column */}
-                        <div className="lg:w-1/3 bg-mukdee-blue p-10 text-white">
+                        <div className="lg:w-1/3 bg-mukdee-blue p-10 text-white flex flex-col justify-between">
                             <div className="space-y-10">
                                 <div className="flex gap-4 items-start border-l-2 border-mukdee-orange pl-4">
                                     <div>
@@ -318,7 +405,7 @@ export default function Home() {
                                             Email
                                         </p>
                                         <p className="text-sm font-medium break-all">
-                                            mukdeetradingprivatelimited@gmail.com
+                                           mukdeetrading@gmail.com
                                         </p>
                                     </div>
                                 </div>
@@ -342,6 +429,17 @@ export default function Home() {
                                             Baprola, New Delhi - 110043
                                         </p>
                                     </div>
+                                </div>
+                            </div>
+
+                            {/* Registration Block */}
+                            <div className="mt-12 pt-8 border-t border-white/10">
+                                <p className="text-[10px] font-bold text-mukdee-orange uppercase tracking-[0.2em] mb-3">
+                                    Registration Details
+                                </p>
+                                <div className="space-y-1 font-mono text-[11px] opacity-80">
+                                    <p>CIN: U46909DL2026PTC461897</p>
+                                    <p>GST: 07AAUCM4038R1ZJ</p>
                                 </div>
                             </div>
                         </div>

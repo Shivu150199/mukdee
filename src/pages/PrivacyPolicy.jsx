@@ -297,10 +297,11 @@ export default function PrivacyPolicy() {
                                 <div className="mt-4 space-y-2 text-sm">
                                     <p>
                                         <strong>Email:</strong>{" "}
-                                        mukdeetradingprivatelimited@gmail.com
+                                        mukdeetrading@gmail.com
                                     </p>
                                     <p>
-                                        <strong>Phone:</strong> +91 98716 24185
+                                        <strong>Phone:</strong> +91 98716 24185,
+                                        +91 8285441138
                                     </p>
                                     <p>
                                         <strong>Address:</strong> G-34, Kh No.

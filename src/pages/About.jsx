@@ -51,7 +51,7 @@ export default function About() {
                             </p>
                             <p className="text-gray-700 text-lg leading-relaxed mb-6">
                                 With a growing focus on government procurement
-                                through **GeM tenders**, bulk supply support,
+                                through GeM tenders, bulk supply support,
                                 and e-commerce marketplace operations, we aim to
                                 serve businesses and institutions with
                                 professionalism, operational discipline, and
