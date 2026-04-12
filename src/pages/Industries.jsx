@@ -323,7 +323,7 @@ export default function Industries() {
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-black mb-4 uppercase tracking-tighter italic text-mukdee-blue">
-                            Industrial & MRO{" "}
+                            Industrial
                             <span className="text-mukdee-orange not-italic">
                                 Catalog
                             </span>
