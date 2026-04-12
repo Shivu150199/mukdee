@@ -20,8 +20,7 @@ export default function Services() {
             title: "Government Procurement / GeM Tenders",
             desc: "We support structured procurement requirements through participation in Government e-Marketplace (GeM) opportunities and institutional sourcing needs. Our focus includes supply coordination, commercial readiness, and efficient order execution for public and institutional buyers.",
             icon: Briefcase,
-            // High-quality professional office/meeting image
-            image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=1000",
+            image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=1000",
             color: "border-mukdee-blue",
             badge: "Institutional Focus",
         },
