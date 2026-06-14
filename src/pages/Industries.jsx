@@ -1,13 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom"; // Added for navigation
+import { Link } from "react-router-dom";
 import {
     Building2,
     Briefcase,
     Globe,
     ShoppingCart,
     ArrowRight,
-    MessageCircle, // Added for Enquiry Icon
+    MessageCircle,
 } from "lucide-react";
 
 export default function Industries() {
@@ -194,6 +194,77 @@ export default function Industries() {
         },
     ];
 
+    const medicalItems = [
+        {
+            title: "Nasal Cannula",
+            image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&auto=format&fit=crop",
+        },
+        {
+            title: "Central Venous Catheter",
+            image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=400&auto=format&fit=crop",
+        },
+        {
+            title: "Hemodialysis Kits & Catheters",
+            image: "https://images.unsplash.com/photo-1631815587646-b85a1bb027e1?w=400&auto=format&fit=crop",
+        },
+        {
+            title: "Thermometers & Weighing Scales",
+            image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&auto=format&fit=crop",
+        },
+        {
+            title: "Crepe Bandage",
+            image: "https://images.unsplash.com/photo-1603398938378-e54eab446dde?w=400&auto=format&fit=crop",
+        },
+        {
+            title: "Surgical Gloves & Wound Dressing",
+            image: "https://images.unsplash.com/photo-1631815587646-b85a1bb027e1?w=400&auto=format&fit=crop",
+        },
+        {
+            title: "Nebuliser Mask",
+            image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=400&auto=format&fit=crop",
+        },
+        {
+            title: "Fistula Needle & Endotracheal Tube",
+            image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&auto=format&fit=crop",
+        },
+    ];
+
+    // --- NEW IT CATEGORY DATA ---
+    const itItems = [
+        {
+            title: "Laptops & Desktops",
+            image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&auto=format&fit=crop",
+        },
+        {
+            title: "Servers & Rack Mounts",
+            image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&auto=format&fit=crop",
+        },
+        {
+            title: "Networking Equipment",
+            image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=400&auto=format&fit=crop",
+        },
+        {
+            title: "Storage Solutions (NAS/SAN)",
+            image: "https://images.unsplash.com/photo-1597852074816-d933c7d2b988?w=400&auto=format&fit=crop",
+        },
+        {
+            title: "Computer Peripherals",
+            image: "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400&auto=format&fit=crop",
+        },
+        {
+            title: "Printers & Scanners",
+            image: "https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?w=400&auto=format&fit=crop",
+        },
+        {
+            title: "Interactive Displays",
+            image: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=400&auto=format&fit=crop",
+        },
+        {
+            title: "Software & Licensing",
+            image: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=400&auto=format&fit=crop",
+        },
+    ];
+
     const institutionalCategories = [
         {
             title: "Institutional Supplies",
@@ -220,72 +291,7 @@ export default function Industries() {
             image: "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=800&auto=format&fit=crop",
         },
     ];
-    const medicalItems = [
-        {
-            title: "Nasal Cannula",
-            image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&auto=format&fit=crop",
-        },
-        {
-            title: "Central Venous Catheter",
-            image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=400&auto=format&fit=crop",
-        },
-        {
-            title: "Hemodialysis Kits & Hemodialysis Catheters",
-            image: "https://images.unsplash.com/photo-1631815587646-b85a1bb027e1?w=400&auto=format&fit=crop",
-        },
-        {
-            title: "Thermometers & Weighing Scales",
-            image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&auto=format&fit=crop",
-        },
-        {
-            title: "Crepe Bandage",
-            image: "https://images.unsplash.com/photo-1603398938378-e54eab446dde?w=400&auto=format&fit=crop",
-        },
-        {
-            title: "Surgical Gloves & Wound Dressing",
-            image: "https://images.unsplash.com/photo-1631815587646-b85a1bb027e1?w=400&auto=format&fit=crop",
-        },
-        {
-            title: "Nebuliser Mask",
-            image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=400&auto=format&fit=crop",
-        },
-        {
-            title: "Fistula Needle & Endotracheal Tube",
-            image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&auto=format&fit=crop",
-        },
-        {
-            title: "Blood Grouping Reagents & ELISA Kits",
-            image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&auto=format&fit=crop",
-        },
-        {
-            title: "Agar Media & Sheep Blood Agar",
-            image: "https://images.unsplash.com/photo-1581093577421-f561a654a353?w=400&auto=format&fit=crop",
-        },
-        {
-            title: "Centrifuge Tubes & Behind-the-Ear Aids",
-            image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&auto=format&fit=crop",
-        },
-        {
-            title: "OT Consumables",
-            image: "https://images.unsplash.com/photo-1631815587646-b85a1bb027e1?w=400&auto=format&fit=crop",
-        },
-        {
-            title: "Syringes & Needles",
-            image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&auto=format&fit=crop",
-        },
-        {
-            title: "IV Cannula & Infusion Sets",
-            image: "https://images.unsplash.com/photo-1603398938378-e54eab446dde?w=400&auto=format&fit=crop",
-        },
-        {
-            title: "Urinary Catheter & Collection Bags",
-            image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=400&auto=format&fit=crop",
-        },
-        {
-            title: "Disposable Masks & Protective Wear",
-            image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&auto=format&fit=crop",
-        },
-    ];
+
     return (
         <div className="bg-white">
             {/* --- HERO SECTION --- */}
@@ -338,7 +344,6 @@ export default function Industries() {
                                 whileHover={{ y: -5 }}
                                 className="group relative bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col h-full"
                             >
-                                {/* Overlay appear on Hover */}
                                 <div className="absolute inset-0 bg-mukdee-blue/90 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center transition-all duration-300 z-20 p-4 text-center">
                                     <p className="text-white font-bold text-xs uppercase mb-4">
                                         {item.title}
@@ -391,7 +396,6 @@ export default function Industries() {
                                 whileHover={{ y: -5 }}
                                 className="group relative bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col h-full"
                             >
-                                {/* Overlay on Hover */}
                                 <div className="absolute inset-0 bg-mukdee-blue/90 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center transition-all duration-300 z-20 p-4 text-center">
                                     <p className="text-white font-bold text-xs uppercase mb-4">
                                         {item.title}
@@ -414,6 +418,58 @@ export default function Industries() {
                                 </div>
 
                                 <div className="p-4 bg-blue-50/50 flex-grow flex items-center justify-center text-center border-t border-blue-100">
+                                    <h3 className="font-bold text-mukdee-blue text-[11px] md:text-xs uppercase tracking-tight leading-snug">
+                                        {item.title}
+                                    </h3>
+                                </div>
+                            </motion.div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* --- IT & TECHNOLOGY CATALOG (NEWLY ADDED) --- */}
+            <section className="py-24 bg-gray-50">
+                <div className="container mx-auto px-6">
+                    <div className="text-center mb-16">
+                        <h2 className="text-3xl md:text-4xl font-black mb-4 uppercase tracking-tighter italic text-mukdee-blue">
+                            IT & Technology{" "}
+                            <span className="text-mukdee-orange not-italic">
+                                Portfolio
+                            </span>
+                        </h2>
+                        <div className="w-16 h-1 bg-mukdee-orange mx-auto mb-6 rounded-full"></div>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+                        {itItems.map((item, i) => (
+                            <motion.div
+                                key={i}
+                                whileHover={{ y: -5 }}
+                                className="group relative bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col h-full"
+                            >
+                                <div className="absolute inset-0 bg-mukdee-blue/90 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center transition-all duration-300 z-20 p-4 text-center">
+                                    <p className="text-white font-bold text-xs uppercase mb-4">
+                                        {item.title}
+                                    </p>
+                                    <Link
+                                        to="/contact"
+                                        className="bg-mukdee-orange text-white px-5 py-2 rounded-lg font-bold text-[10px] uppercase tracking-widest hover:scale-105 transition-transform flex items-center gap-2"
+                                    >
+                                        <MessageCircle size={14} /> Enquire Now
+                                    </Link>
+                                </div>
+
+                                <div className="h-36 md:h-44 w-full p-6 flex items-center justify-center bg-white overflow-hidden">
+                                    <img
+                                        src={item.image}
+                                        alt={item.title}
+                                        loading="lazy"
+                                        className="max-h-full max-w-full object-contain group-hover:scale-110 transition-transform duration-500 mix-blend-multiply rounded-xl"
+                                    />
+                                </div>
+
+                                <div className="p-4 bg-gray-50/50 flex-grow flex items-center justify-center text-center border-t border-gray-100">
                                     <h3 className="font-bold text-mukdee-blue text-[11px] md:text-xs uppercase tracking-tight leading-snug">
                                         {item.title}
                                     </h3>

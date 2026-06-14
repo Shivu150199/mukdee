@@ -7,7 +7,10 @@ import {
     Settings,
     Heart,
     ChevronRight,
+    Award,
+    ExternalLink,
 } from "lucide-react";
+import startUpCertificate from "../assets/StartUpCertificate.pdf";
 
 export default function About() {
     const containerVariants = {
@@ -237,7 +240,48 @@ export default function About() {
                 </div>
             </section>
 
-            {/* SECTION 5: BUSINESS VERTICALS (Detailed Text) */}
+            {/* SECTION 5: CERTIFICATIONS */}
+            <section className="py-20 bg-white">
+                <div className="container mx-auto px-6">
+                    <div className="text-center mb-12">
+                        <h2 className="text-4xl font-bold text-mukdee-blue mb-4 uppercase tracking-tighter">
+                            Certifications & Recognition
+                        </h2>
+                        <div className="w-20 h-1.5 bg-mukdee-orange mx-auto"></div>
+                    </div>
+
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                        className="max-w-md mx-auto"
+                    >
+                        <div className="bg-mukdee-lightBlue border border-mukdee-blue/20 rounded-3xl p-8 flex flex-col items-center text-center shadow-lg hover:shadow-xl transition-shadow">
+                            <div className="bg-mukdee-blue w-20 h-20 rounded-full flex items-center justify-center mb-6">
+                                <Award className="text-white" size={40} />
+                            </div>
+                            <h3 className="text-xl font-bold text-mukdee-blue mb-2">
+                                Startup India Certificate
+                            </h3>
+                            <p className="text-gray-600 text-sm mb-6">
+                                Recognised by the Government of India under the Startup India initiative — affirming our commitment to innovation and growth.
+                            </p>
+                            <a
+                                href={startUpCertificate}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-2 bg-mukdee-blue text-white font-semibold px-6 py-3 rounded-full hover:bg-mukdee-blue/90 transition-colors"
+                            >
+                                <ExternalLink size={16} />
+                                View Certificate
+                            </a>
+                        </div>
+                    </motion.div>
+                </div>
+            </section>
+
+            {/* SECTION 6: BUSINESS VERTICALS (Detailed Text) */}
             <section className="py-24 bg-mukdee-lightBlue">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-16">
